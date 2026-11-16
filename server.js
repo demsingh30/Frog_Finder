@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express() 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 console.log('starting')
 
@@ -44,6 +44,7 @@ response.sendFile(__dirname + '/index.html')
 
 app.use('/css' , express.static('css'))
 app.use('/frog_pics' , express.static('frog_pics'))
+app.use('/js' , express.static('js') )
 
 app.listen(PORT , () => {
     console.log('It is running')
@@ -52,7 +53,7 @@ app.listen(PORT , () => {
 app.get('/api/:frogName' ,  (request, response) => {
    const frogName =  request.params.frogName.toLowerCase()
     if (frogs[frogName]) {
-        console.log(response.json(frogs[frogName])) 
+        response.json(frogs[frogName])
     }
     else {
 response.json(frogs['unknown'])
