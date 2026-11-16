@@ -1,0 +1,153 @@
+/* ---------- Colors (change these in one place) ---------- */
+:root {
+  --mint: #e6f6ec;
+  --leaf: #3f9b6b;
+  --leaf-dark: #2c6e4c;
+  --pink: #ffc2d6;
+  --pink-dark: #f78fb3;
+  --cream: #fffaf3;
+  --ink: #2f4a3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--mint);
+  color: var(--ink);
+  font-family: 'Nunito', system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.page {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ---------- Header ---------- */
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: 'Fredoka', system-ui, sans-serif;
+  font-size: 2.4rem;
+  color: var(--leaf-dark);
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  color: var(--leaf);
+  font-weight: 700;
+}
+
+/* ---------- Search ---------- */
+.search {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.8rem 1rem;
+  border: 3px solid var(--pink);
+  border-radius: 999px;
+  background: var(--cream);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.search input:focus {
+  outline: none;
+  border-color: var(--pink-dark);
+}
+
+.search button {
+  padding: 0.8rem 1.3rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--pink-dark);
+  color: white;
+  font-family: 'Fredoka', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.search button:hover {
+  background: var(--leaf);
+  transform: translateY(-2px);
+}
+
+/* ---------- Frog card ---------- */
+.card {
+  background: var(--cream);
+  border: 3px solid var(--pink);
+  border-radius: 28px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 0 var(--pink);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.photo-frame {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--mint);
+  aspect-ratio: 4 / 3;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card h2 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Fredoka', system-ui, sans-serif;
+  font-size: 1.6rem;
+  color: var(--leaf-dark);
+}
+
+/* ---------- Facts ---------- */
+.facts {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.fact {
+  background: var(--mint);
+  border-radius: 14px;
+  padding: 0.6rem 0.9rem;
+}
+
+.fact dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--leaf);
+}
+
+.fact dd {
+  margin: 0.15rem 0 0;
+  min-height: 1.2em;
+}

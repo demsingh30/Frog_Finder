@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frog Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <main class="page">
+
+    <header class="hero">
+      <h1>Frog Finder 🐸</h1>
+      <p class="tagline">Pick A Frog!</p>
+    </header>
+
+    <!-- The search area -->
+    <section class="search">
+      <input id="frogName" type="text" placeholder="dart, glass, or white's tree" autocomplete="off">
+      <button id="findFrog" type="button">Find frog</button>
+    </section>
+
+    <!-- The frog card. Your JS fills in the empty spots below. -->
+    <section class="card" id="frogCard">
+
+      <div class="photo-frame">
+        <img id="frogImg" src="" alt="Frog photo">
+      </div>
+
+      <h2 id="frogType">Your frog shows up here</h2>
+
+      <dl class="facts">
+        <div class="fact">
+          <dt>Size</dt>
+          <dd id="frogSize"></dd>
+        </div>
+        <div class="fact">
+          <dt>Colors</dt>
+          <dd id="frogColors"></dd>
+        </div>
+        <div class="fact">
+          <dt>Fun fact</dt>
+          <dd id="frogFact"></dd>
+        </div>
+      </dl>
+
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+   
+</body>
+</html>
