@@ -20,7 +20,17 @@
 
     <!-- The search area -->
     <section class="search">
-      <input id="frogName" type="text" placeholder=""dart frog, glass frog, or whites tree frog" autocomplete="off">
+      <input id="frogName" type="text" list="frogNames" placeholder="" autocomplete="off">
+<datalist id="frogNames">
+  <option value="dart frog"></option>
+  <option value="glass frog"></option>
+  <option value="whites tree frog"></option>
+  <option value="red eyed tree frog"></option>
+  <option value="bullfrog"></option>
+  <option value="tomato frog"></option>
+  <option value="goliath frog"></option>
+  <option value="wood frog"></option>
+</datalist>
       <button id="findFrog" type="button">Find frog</button>
     </section>
 
@@ -30,6 +40,8 @@
       <div class="photo-frame">
         <img id="frogImg" src="frog_pics/frog_image.jpg" alt="frog_image.jpg">
       </div>
+
+     
 
       <h2 id="frogType">Your froggie facts:</h2>
 
@@ -53,7 +65,7 @@
   </main>
 
   <script src="js/main.js"></script>
-  
+
    
 </body>
 </html>

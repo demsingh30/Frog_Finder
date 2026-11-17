@@ -32,6 +32,41 @@ const frogs = {
     colors: 'Unknown',
     funFact: 'We have not met this frog yet',
     image: 'frog_pics/unknown.png'
+  } ,
+  'red eyed tree frog': {
+    type: 'Red-eyed tree frog',
+    size: '2 to 3 inches',
+    colors: 'Bright green with red eyes and blue and orange sides',
+    funFact: 'It flashes its red eyes to startle predators',
+    image: 'frog_pics/tree_frog.webp'
+  },
+  'bullfrog': {
+    type: 'American bullfrog',
+    size: '3.5 to 6 inches',
+    colors: 'Green or olive brown',
+    funFact: 'It is the largest frog in North America',
+    image: 'frog_pics/bullfrog.jpg'
+  },
+  'tomato frog': {
+    type: 'Tomato frog',
+    size: '2.5 to 4 inches',
+    colors: 'Bright red to orange',
+    funFact: 'When scared, it puffs up and oozes a sticky white goo',
+    image: 'frog_pics/tomato_frog.jpg'
+  },
+  'goliath frog': {
+    type: 'Goliath frog',
+    size: 'Up to 12 inches',
+    colors: 'Brown and green',
+    funFact: 'It is the largest frog in the world',
+    image: 'frog_pics/goliath_frog.webp'
+  },
+  'wood frog': {
+    type: 'Wood frog',
+    size: '1.5 to 3 inches',
+    colors: 'Tan, brown, or reddish with a dark mask',
+    funFact: 'It can freeze solid in winter and thaw out in spring',
+    image: 'frog_pics/wood_frog.webp'
   }
 }
 
