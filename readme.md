@@ -37,4 +37,4 @@ Then open `http://localhost:3000`.
 
 ## What I learned
 
-I learned how CRUD works. I learned how the "plumbing" of code works and how to display things client side vs server side.
+I learned how custom API's work. I learned how the "plumbing" of code works and how to display things client side vs server side. I practiced express with this and hosting with render.
